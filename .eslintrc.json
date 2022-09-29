@@ -7,8 +7,8 @@
         "plugin:react/recommended",
         "airbnb",
         "airbnb/hooks",
-        "prettier",
-        "prettier/react"
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -24,5 +24,34 @@
         "react-native"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
     }
 }
