@@ -60,5 +60,4 @@ describe('List <Component />', () => {
     expect(getByTestId('list-component')).toBeDefined()
     expect(getAllByTestId('item-component').length).toBe(2)
   });
-  it('should navigate to a detail view when tap a character');
 });
