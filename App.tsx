@@ -1,17 +1,12 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-  View,
-} from 'react-native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Home from './src/pages/Home';
 
-
+const queryClient = new QueryClient();
 const App = () => (
-    <SafeAreaView>
-      <View>
-        <Text>Hola Mundo</Text>
-      </View>
-    </SafeAreaView>
-  );
+  <QueryClientProvider client={queryClient}>
+    <Home />
+  </QueryClientProvider>
+);
 
 export default App;
