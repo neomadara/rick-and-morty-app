@@ -1,7 +1,7 @@
 import React, {FC} from 'react'
-import { Character } from '../../models/character.model';
 import { Image, View } from 'react-native';
 import { Text } from '@react-native-material/core';
+import { Character } from '../../models/character.model';
 
 interface Props {
   character: Character
