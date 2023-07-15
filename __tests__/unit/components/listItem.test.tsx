@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react-native';
-import { Character } from '../../src/models/character.model';
-import ListItem from '../../src/components/listItem'
+import { Character } from '../../../src/models/character.model';
+import ListItem from '../../../src/components/listItem'
 
 describe('List Item', () => {
   it('should show a name, image, status and species information', () => {
