@@ -1,13 +1,10 @@
 import { render } from '@testing-library/react-native';
-import Home from '../../src/pages/Home';
-import useCharacter from '../../src/hooks/useCharacter';
-// import { Character } from '../../src/models/character.model';
+import Home from '../../../src/pages/Home';
+import useCharacter from '../../../src/hooks/useCharacter';
 
-// solves typescript module
 const mockUseCharacter = useCharacter as jest.Mock<any>
 
-// mock the module
-jest.mock('../../src/hooks/useCharacter')
+jest.mock('../../../src/hooks/useCharacter')
 
 describe('Home', () => {
   beforeEach(() => {

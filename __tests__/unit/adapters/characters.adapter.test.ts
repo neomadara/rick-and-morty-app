@@ -1,4 +1,4 @@
-import charactersAdapter from '../../src/adapters/character.adapter';
+import charactersAdapter from '../../../src/adapters/character.adapter';
 
 describe('Characters adapter', () => {
   test('Should adapter a request returned the characters', () => {
