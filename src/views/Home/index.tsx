@@ -6,7 +6,7 @@ import useCharacter from '../../hooks/useCharacter';
 import charactersAdapter from '../../adapters/character.adapter';
 import { Character } from '../../models/character.model';
 
-const Home = () => {
+const Home = () : JSX.Element => {
   const { isLoading, isError, data } = useCharacter()
 
   if (isLoading) return <Text>loading...</Text>

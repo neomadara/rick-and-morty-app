@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react-native';
-import Home from '../../../src/pages/Home';
+import Home from '../../../src/views/Home';
 import useCharacter from '../../../src/hooks/useCharacter';
 
 const mockUseCharacter = useCharacter as jest.Mock<any>
