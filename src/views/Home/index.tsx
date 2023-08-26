@@ -4,7 +4,6 @@ import { View } from 'react-native';
 import List from '../../components/list';
 import useCharacter from '../../hooks/useCharacter';
 import charactersAdapter from '../../adapters/character.adapter';
-import { Character } from '../../models/character.model';
 
 const Home = () : JSX.Element => {
   const { isLoading, isError, data } = useCharacter()

@@ -1,17 +1,18 @@
 import React, {FC} from 'react';
-import { View } from 'react-native';
-import { Character } from '../../models/character.model';
+import { FlatList, View } from 'react-native';
 import ListItem from '../listItem';
+import styles from './styles';
 
 interface Props {
   characters: Character[]
 }
 
 const List: FC<Props> = ({characters}) => (
-    <View testID="list-component">
-      {characters.map((character) => (
-          <ListItem character={character} key={character.id} />
-        ))}
+    <View testID="list-component" style={styles.container}>
+      <FlatList
+        data={characters}
+        renderItem={({item}) => <ListItem character={item} key={item.id} />}
+      />
     </View>
   )
 

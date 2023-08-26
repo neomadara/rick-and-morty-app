@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native';
-import { Character } from '../../../src/models/character.model';
 import ListItem from '../../../src/components/listItem'
 
 describe('List Item', () => {
