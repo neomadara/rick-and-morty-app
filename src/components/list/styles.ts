@@ -7,5 +7,6 @@ export default StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: 8,
-  }
+  },
+  headText: {}
 });

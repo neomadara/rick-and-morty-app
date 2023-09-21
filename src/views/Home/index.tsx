@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import List from '../../components/list';
 import useCharacter from '../../hooks/useCharacter';
 import charactersAdapter from '../../adapters/character.adapter';
+import styles from './styles';
 
 const Home = () : JSX.Element => {
   const { isLoading, isError, data } = useCharacter()
@@ -18,8 +19,8 @@ const Home = () : JSX.Element => {
 
   return (
     <>
-      <View>
-        <Text>The Rick and Morty API</Text>
+      <View style={styles.container}>
+        <Text style={styles.container}>The Rick and Morty API</Text>
       </View>
       <List characters={characters} />
     </>

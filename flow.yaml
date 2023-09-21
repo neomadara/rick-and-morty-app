@@ -1,0 +1,6 @@
+# flow.yaml
+
+appId: com.rickandmortyapp
+---
+- launchApp
+- tapOn: "Text on the screen"

@@ -14,7 +14,7 @@ const ListItem: FC<Props> = ({character}) => (
     </View>
     <View style={styles.information}>
       <Text testID="list-item-name" style={[styles.whiteColor, styles.title]}>{character.name}</Text>
-      <Text testID="list-item-status-specie" style={[styles.whiteColor, styles.subTitle, styles.bottomPadding]}>
+      <Text testID="list-item-status-specie" style={[styles.whiteColor, styles.subTitle]}>
         {`${character.status  } - ${ character.species}`}
       </Text>
       <Text style={[styles.greyColor, styles.subTitle]}>{character.gender}</Text>

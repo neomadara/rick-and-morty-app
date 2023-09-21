@@ -20,7 +20,7 @@ export default StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 16
+    fontSize: 20
   },
   subTitle: {
     fontWeight: 'normal',
@@ -36,6 +36,7 @@ export default StyleSheet.create({
   information: {
     paddingLeft: 6,
     display: 'flex',
+    flex: 1,
     flexDirection: 'column',
   },
   nameContainer: {
